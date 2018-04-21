@@ -1,2 +1,197 @@
 /* CSS Document */
 
+body {
+	background-color: #02010a;
+	font-family: 'Gamja Flower', cursive;
+	font-family: 'Lora', serif;
+	font-family: 'Dancing Script', cursive;
+}
+img {
+	-webkit-filter: drop-shadow(2px 2px #02010a);
+	position: relative;
+}
+navbar {
+	margin-top: 2em;
+	width: 30%;
+}
+.cabecera h1 {
+	float: left;
+	width: 70%;
+	color: white;
+	text-shadow: 1px 2px 3px #02010a;
+}
+.cabecera navbar a {
+}
+.container {
+	align-content: center;
+	border: 1px solid;
+	border-radius: 10px;
+	margin: 0 auto;
+	width: 900px;
+	flex-flow: row wrap;
+}
+.portada {
+	clear: both;
+	color: #333;
+	background-color: #82c3a6;
+	min-height: 200px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+.imagen1 {
+	width: 80%;
+	display: flex;
+	margin: auto;
+}
+.cabecera {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	background-color: #5b7989;
+	margin: 0;
+	padding: 0;
+	;
+	display: flex;
+	flex-flow: row wrap;
+}
+.cabecera navbar {
+	text-decoration: none;
+	float: right;
+}
+a {
+	text-decoration: none;
+}
+.imagen-secundaria {
+	clear: both;
+	background-color: #d5c75f;
+	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.c5 {
+	width: 50%;
+}
+.c6 {
+	width: 50%;
+}
+/*Pie de pagina*/
+.piedepagina {
+	clear: both;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #333;
+	background-color: #C6d5c5;
+	min-height: 200px;
+	width: 100%;
+}
+p {
+	text-align: left;/*margin-top: 8em;*/
+}
+.contenedor {
+	clear: both;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #333;
+	background-color: #C6d5c5;
+	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor div {
+}
+.c1 p {
+	font-size: 1em;
+}
+.c2 p {
+	font-size: 1em;
+}
+.c3 p {
+	font-size: 1em;
+}
+.c4 p {
+	font-size: 1em;
+}
+.c1 {
+	width: 25%;
+}
+.c2 {
+	width: 20%;
+}
+.c3 {
+	width: 30%;
+}
+.c4 {
+	width: 25%;
+}
+
+@media all and (max-width: 900px) {
+.c1 {
+	width: 100%;
+	order: 7;
+}
+.c2 {
+	width: 100%;
+	order: 2;
+}
+.c3 {
+	width: 100%;
+	order: 3;
+}
+.c4 {
+	width: 100%;
+	order: 4;
+}
+.c5 {
+	width: 100%;
+	order: 5;
+}
+.c6 {
+	width: 100%;
+	order: 6;
+}
+.container {
+	width: 100%;
+}
+.cabecera {
+	width: 100%;
+	order: 1;
+}
+navbar {
+	width: 100%;
+	order: 8;
+}
+}
+
+@media all and (max-width: 900px) and (min-width: 200px) {
+.c1 {
+	width: 50%;
+}
+.c2 {
+	width: 50%;
+}
+.c3 {
+	width: 50%;
+}
+.c4 {
+	width: 50%;
+}
+.c5 {
+	width: 50%;
+}
+.c6 {
+	width: 50%;
+}
+}
+/*Iconos de redes sociales*/
+.icono-redes {
+	width: 20px;
+}

@@ -2,9 +2,73 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<meta name="viewport" content="initial-scale=1.0, width=device, user-scalable=no">
+<link rel="stylesheet" href="css/estilos.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gamja+Flower|Lora" rel="stylesheet">
+<title>Web de Fotografia</title>
 </head>
 
 <body>
+<div class="container" role="main"> 
+  <!-- Menu pricipal-->
+	
+  <header class="cabecera">
+    <h1>Comenzando con la fotografia</h1>
+    <navbar>
+		
+		<a href="index.html">Inicio</a> <a href="htmlpages/paisajes.html">Paisajes</a> <a href="htmlpages/retratos.html">Retratos</a> </navbar>
+</header>
+		
+  
+  <!--Slide Show Protada-->
+  <div class="portada">
+    <picture>
+      <source media="(min-width:768px)" srcset="images/portada-principal.jpg">
+      <source media="(min-width:480px)" srcset="images/portada-principal.jpg">
+      <img  class="imagen1" alt="imagenscc" src="images/portada-principal.jpg">
+	  
+	  </picture>
+  </div>
+<div class="imagen-secundaria">
+    <div class="c5">
+      <picture>
+        <source media="(min-width:768px)" srcset="images/paisajes1.jpg">
+        <source media="(min-width:480px)" srcset="images/paisajes1.jpg">
+        <img  class="imagen1" alt="imagenscc" src="images/paisajes1.jpg"><a href="htmlpages/retratos.html">Paisajes</a></picture>
+    </div>
+    <div class="c6">
+      <picture>
+        <source media="(min-width:768px)" srcset="images/retratos1.jpg">
+        <source media="(min-width:480px)" srcset="images/retratos1.jpg">
+        <img  class="imagen1" alt="imagenscc" src="images/retratos1.jpg"> <a href="htmlpages/paisajes.html">Retratos</a></picture>
+    </div>
+  </div>
+  <footer class="contenedor">
+    
+      <div class="c1">
+		  <h2>Contacto</h2>
+        <p><a href="mailto:darios223@hotmail.com?subject=feedback">darios223@hotmail.com</a></p>
+		  <p>Calle 5 con 3</p>
+		  <p>Telefono: 2072669.</p>
+      </div>
+      <div class="c2">
+		   <h2>T&eacute;rminos</h2>
+        <p>Conoce nuestros t&eacute;rminos y  condiciones.</p>
+      </div>
+      <div class="c3">
+		   <h2>Redes Sociales</h2>
+        <p>Comparte en nuestras redes</p>
+		  <p><img class="icono-redes" src="images/facebook-icono.png" alt="facebook">&ensp;Comenzando Fotografia</p>
+		  <p><img  class="icono-redes" src="images/twitter-icono.png" alt="twiter">&ensp;Comenzando Fotografia</p>
+		  <p><img class="icono-redes" src="images/instagram-icono.jpg" alt="instagram">&ensp;Comenzando Fotografia</p>
+		  
+      </div>
+	     <div class="c4">
+			  <h2>Derechos</h2>
+        <p>&copy; 2020 photoshow.com</p>
+      </div>
+ 
+  </footer>
+</div>
 </body>
 </html>
