@@ -8,22 +8,28 @@ body {
 }
 img {
 	-webkit-filter: drop-shadow(2px 2px #02010a);
-	position: relative;
+}
+h2{
+	margin-left:10%;
+	margin-right: 10%;
 }
 navbar {
 	margin-top: 2em;
-	width: 30%;
+	text-align:right;
+	width: 50%;
 }
-.cabecera h1 {
+ h1 {
 	float: left;
-	width: 70%;
+	width: 40%;
 	color: white;
 	text-shadow: 1px 2px 3px #02010a;
+	margin-left: 2%;
+	
 }
 .cabecera navbar a {
 }
 .container {
-	align-content: center;
+	
 	border: 1px solid;
 	border-radius: 10px;
 	margin: 0 auto;
@@ -40,11 +46,16 @@ navbar {
 	padding: 0;
 	display: flex;
 	flex-flow: row wrap;
+	align-content: center;
+	align-items: center;
 }
 .imagen1 {
 	width: 80%;
-	display: flex;
-	margin: auto;
+	display:block;
+	margin: 9%;
+	
+	
+	
 }
 .cabecera {
 	border-top-left-radius: 10px;
@@ -53,7 +64,7 @@ navbar {
 	background-color: #5b7989;
 	margin: 0;
 	padding: 0;
-	;
+	
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -68,7 +79,7 @@ a {
 	clear: both;
 	background-color: #d5c75f;
 	min-height: 200px;
-	margin: 0;
+margin: 0;
 	padding: 0;
 	width: 100%;
 	display: flex;
@@ -91,7 +102,9 @@ a {
 	width: 100%;
 }
 p {
-	text-align: left;/*margin-top: 8em;*/
+	text-align:justify;/*margin-top: 8em;*/
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .contenedor {
 	clear: both;
@@ -110,18 +123,26 @@ p {
 }
 .c1 p {
 	font-size: 1em;
+	
 }
 .c2 p {
 	font-size: 1em;
+
 }
 .c3 p {
 	font-size: 1em;
+	
 }
 .c4 p {
 	font-size: 1em;
+	
+
 }
 .c1 {
 	width: 25%;
+	
+	
+	
 }
 .c2 {
 	width: 20%;
@@ -171,7 +192,7 @@ navbar {
 }
 }
 
-@media all and (max-width: 900px) and (min-width: 200px) {
+@media all and (max-width: 900px) and (min-width: 500px) {
 .c1 {
 	width: 50%;
 }
@@ -193,5 +214,6 @@ navbar {
 }
 /*Iconos de redes sociales*/
 .icono-redes {
+
 	width: 20px;
 }
