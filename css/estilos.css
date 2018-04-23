@@ -46,6 +46,7 @@ h1 {
 	width: 900px;
 	flex-flow: row wrap;
 	animation: mianimacion 2s;
+	opacity: 0.9;
 }
 .portada {
 	clear: both;
