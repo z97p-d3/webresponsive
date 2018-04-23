@@ -5,7 +5,8 @@ body {
 	font-family: 'Gamja Flower', cursive;
 	font-family: 'Lora', serif;
 	font-family: 'Dancing Script', cursive;
-	margin: 0;}
+	margin: 0;
+}
 img {
 	-webkit-filter: drop-shadow(2px 2px #02010a);
 }
@@ -14,7 +15,6 @@ h2 {
 	margin-right: 10%;
 }
 p {
-	/*margin-top: 8em;*/
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -72,6 +72,8 @@ h1 {
 	display: flex;
 	padding: 4%;
 }
+
+/*Transiciones de index*/
 .imagen1:hover {
 	-webkit-filter: drop-shadow(2px 2px #82c3a6 );
 	-ms-transform: rotate(10deg); /* IE 9 */
@@ -124,6 +126,18 @@ h1 {
 	border: 1px;
 	padding-bottom: 1%;
 }
+.imagen-paisaje {
+	clear: both;
+	background-color: #d5c75f;
+	min-height: 200px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	border: 1px;
+	padding-bottom: 1%;
+}
 /*Cajas de imagenes secundarias*/
 .c5 {
 	width: 50%;
@@ -132,6 +146,10 @@ h1 {
 .c6 {
 	width: 50%;
 	text-align: center;
+}
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+	width: 22%;
+	padding: 5%;
 }
 /*Pie de pagina*/
 .piedepagina {
@@ -156,22 +174,9 @@ h1 {
 	display: flex;
 	flex-flow: row wrap;
 }
-.contenedor div {
-}
-.c1 p {
+.c1 p, .c2 p, .c3 p, .c4 p {
 	font-size: 1em;
 }
-.c2 p {
-	font-size: 1em;
-}
-.c3 p {
-	font-size: 1em;
-}
-.c4 p {
-	font-size: 1em;
-}
-
-
 .c1 {
 	width: 25%;
 }
@@ -185,34 +190,20 @@ h1 {
 	width: 25%;
 }
 
-/* media querys*/
+
+/* media querys para telefonos celulares*/
 
 
-@media (min-width:150px) and (max-width: 900px) {
 
-.c1 {
+@media all and (min-width:150px) and (max-width: 900px) {
+.c1, .c2, .c3, .c4, .c5, .c6 {
 	width: 100%;
-	order: 7;
 }
-.c2 {
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
 	width: 100%;
-	order: 2;
 }
-.c3 {
+.imagen-paisaje {
 	width: 100%;
-	order: 3;
-}
-.c4 {
-	width: 100%;
-	order: 4;
-}
-.c5 {
-	width: 100%;
-	order: 5;
-}
-.c6 {
-	width: 100%;
-	order: 6;
 }
 .container {
 	width: 100%;
@@ -237,30 +228,18 @@ h1 {
 	width: 100%;
 }
 }
+/*Para tablet ipods*/
 
 @media (min-width:600px) and (max-width: 900px) {
-
-.c1 {
-	width: 50%;
-}
-.c2 {
-	width: 50%;
-}
-.c3 {
-	width: 50%;
-}
-.c4 {
-	width: 50%;
-}
-.c5 {
-	width: 50%;
-}
-.c6 {
+.c1, .c2, .c3, .c4, .c5, .c6 {
 	width: 50%;
 }
 h1 {
 	text-align: center;
 	width: 100%;
+}
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6 {
+	width: 40%;
 }
 }
 /*Iconos de redes sociales*/
@@ -282,11 +261,76 @@ h1 {
 }
 }
 
-div[class^='caja']{
-	clear: both;
-	border: 4px solid black;
-	display: inline-block;
-	width: 30%;
-	height: 30%;
-	
+/*Para paisajes y retratos*/
+.paisaje1 {
+	border-left: 5%;
+	border-bottom: 5%;
+	border-right: 5%;
+	border-top: 5%;
+	width: 100%;
+	-webkit-filter: blur(10px);
+}
+.paisaje2 {
+	border-left: 5%;
+	border-bottom: 5%;
+	border-right: 5%;
+	border-top: 5%;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+.paisaje3 {
+	border-left: 5%;
+	border-bottom: 5%;
+	border-right: 5%;
+	border-top: 5%;
+	width: 100%;
+	-webkit-filter: sepia(90%);
+}
+.paisaje4 {
+	border-left: 5%;
+	border-bottom: 5%;
+	border-right: 5%;
+	border-top: 5%;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+.paisaje5 {
+	border-left: 5%;
+	border-bottom: 5%;
+	border-right: 5%;
+	border-top: 5%;
+	width: 100%;
+}
+.paisaje6 {
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+.retrato1 {
+	display: flex;
+	width: 100%;
+	-webkit-filter: blur(10px);
+}
+.retrato2 {
+	display: flex;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+.retrato3 {
+	display: flex;
+	width: 100%;
+	-webkit-filter: sepia(90%);
+}
+.retrato4 {
+	display: flex;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+}
+.retrato5 {
+	display: flex;
+	width: 100%;
+}
+.retrato6 {
+	display: flex;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
 }
