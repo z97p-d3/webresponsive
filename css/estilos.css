@@ -1,61 +1,102 @@
 /* CSS Document */
-
+/* Etiquetas*/
 body {
 	background-color: #02010a;
 	font-family: 'Gamja Flower', cursive;
 	font-family: 'Lora', serif;
 	font-family: 'Dancing Script', cursive;
-}
+	margin: 0;}
 img {
 	-webkit-filter: drop-shadow(2px 2px #02010a);
 }
-h2{
-	margin-left:10%;
+h2 {
+	margin-left: 10%;
 	margin-right: 10%;
+}
+p {
+	/*margin-top: 8em;*/
+	margin-left: 10%;
+	margin-right: 10%;
+}
+a {
+	text-decoration: none;
+	text-align: center;
 }
 navbar {
 	margin-top: 2em;
-	text-align:right;
+	text-align: right;
 	width: 50%;
 }
- h1 {
-	float: left;
+navbar a {
+	color: white;
+	text-shadow: 1px 2px 3px #02010a;
+	word-spacing: 15px;
+}
+h1 {
 	width: 40%;
 	color: white;
 	text-shadow: 1px 2px 3px #02010a;
-	margin-left: 2%;
-	
+	margin: 2%;
 }
-.cabecera navbar a {
-}
+/*Clases*/
 .container {
-	
 	border: 1px solid;
 	border-radius: 10px;
 	margin: 0 auto;
 	width: 900px;
 	flex-flow: row wrap;
+	animation: mianimacion 2s;
 }
 .portada {
 	clear: both;
 	color: #333;
 	background-color: #82c3a6;
-	min-height: 200px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-flow: row wrap;
-	align-content: center;
-	align-items: center;
 }
 .imagen1 {
-	width: 80%;
-	display:block;
-	margin: 9%;
-	
-	
-	
+	width: 90%;
+	display: flex;
+	padding: 4%;
+}
+.imagen2 {
+	width: 90%;
+	display: flex;
+	padding: 4%;
+}
+.imagen-portada {
+	width: 90%;
+	display: flex;
+	padding: 4%;
+}
+.imagen1:hover {
+	-webkit-filter: drop-shadow(2px 2px #82c3a6 );
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+	transform: rotate(10deg);
+	transition-duration: 2s;
+	animation-name: imagen2-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+}
+.imagen2:hover {
+	-webkit-filter: drop-shadow(2px 2px #82c3a6 );
+	-ms-transform: translate(5px, -20px); /* IE 9 */
+	-webkit-transform: translate(5px, -20px); /* Safari */
+	transform: translate(5px, -20px);
+	transition-duration: 2s;
+	animation-name: imagen2-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
 }
 .cabecera {
 	border-top-left-radius: 10px;
@@ -64,7 +105,6 @@ navbar {
 	background-color: #5b7989;
 	margin: 0;
 	padding: 0;
-	
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -72,24 +112,26 @@ navbar {
 	text-decoration: none;
 	float: right;
 }
-a {
-	text-decoration: none;
-}
 .imagen-secundaria {
 	clear: both;
 	background-color: #d5c75f;
 	min-height: 200px;
-margin: 0;
+	margin: 0;
 	padding: 0;
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
+	border: 1px;
+	padding-bottom: 1%;
 }
+/*Cajas de imagenes secundarias*/
 .c5 {
 	width: 50%;
+	text-align: center;
 }
 .c6 {
 	width: 50%;
+	text-align: center;
 }
 /*Pie de pagina*/
 .piedepagina {
@@ -100,11 +142,6 @@ margin: 0;
 	background-color: #C6d5c5;
 	min-height: 200px;
 	width: 100%;
-}
-p {
-	text-align:justify;/*margin-top: 8em;*/
-	margin-left: 10%;
-	margin-right: 10%;
 }
 .contenedor {
 	clear: both;
@@ -123,26 +160,20 @@ p {
 }
 .c1 p {
 	font-size: 1em;
-	
 }
 .c2 p {
 	font-size: 1em;
-
 }
 .c3 p {
 	font-size: 1em;
-	
 }
 .c4 p {
 	font-size: 1em;
-	
-
 }
+
+
 .c1 {
 	width: 25%;
-	
-	
-	
 }
 .c2 {
 	width: 20%;
@@ -154,7 +185,11 @@ p {
 	width: 25%;
 }
 
-@media all and (max-width: 900px) {
+/* media querys*/
+
+
+@media (min-width:150px) and (max-width: 900px) {
+
 .c1 {
 	width: 100%;
 	order: 7;
@@ -190,9 +225,21 @@ navbar {
 	width: 100%;
 	order: 8;
 }
+navbar {
+	text-align: center;
+	margin-top: 2em;
+}
+header {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	width: 100%;
+}
 }
 
-@media all and (max-width: 900px) and (min-width: 500px) {
+@media (min-width:600px) and (max-width: 900px) {
+
 .c1 {
 	width: 50%;
 }
@@ -211,9 +258,35 @@ navbar {
 .c6 {
 	width: 50%;
 }
+h1 {
+	text-align: center;
+	width: 100%;
+}
 }
 /*Iconos de redes sociales*/
 .icono-redes {
-
 	width: 20px;
+}
+
+/* Animacion de contenedor principal*/
+
+@-webkit-keyframes mianimacion {
+ 0% {
+ margin-top: 120%
+}
+ 60% {
+ margin-top: -5%;
+}
+ 100% {
+ margin-top: 0%;
+}
+}
+
+div[class^='caja']{
+	clear: both;
+	border: 4px solid black;
+	display: inline-block;
+	width: 30%;
+	height: 30%;
+	
 }
